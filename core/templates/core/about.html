@@ -1,0 +1,25 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-a.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar-a.jpeg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Aarón Rangel Pérez</h2>   
+        <p>Nacido en Toluca de Lerdo, viviendo actualmente en el Municipio de Lerma de Villada, con 20 años estudio la
+            carrera de Ingenieria de Redes Inteligentes y Ciberseguridad en la Universidad Tecnologica del Valle Toluca.</p>
+        <p>He trabajado para la empresa de Q&CIS como desarrollador de software, al igual que realice mis practicas
+            profesionales en un pequeño local en donde se repaaban computadoras.</p>
+    </div>
+</div>
+{% endblock %}
